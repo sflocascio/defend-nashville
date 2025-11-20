@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Defend Nashville!</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="header">
+      <img src="./src/tennessee-flag.png" alt="Tennessee Flag" id="headerFlag" />
+      <div id="headerText">
+        <h1>Defend Nashville</h1>
+        <p id="headerSubtext">Nashville needs you! Use cash available to 
+          invest in Nashville to keep it from falling to out of town influences!
+          Make it through all 20 rounds to save Nashville!
+        
+        </p>
+        <div class="controls">
+          <button id="startWaveBtn">Start Wave</button>
+        </div>
+      </div>
+    </div>
+    <div id="hud">
+      <div class="stats">
+        <span><strong>Wave:</strong> <span id="wave">1 / 10</span></span>
+        <span><strong>Cash: $</strong> <span id="gold">0</span></span>
+        <span><strong>Nashville Health:</strong> <span id="hp">100</span></span>
+        <span><strong>Challenger:</strong> <span id="themeName">-</span></span>
+        <span><strong>Challengers Left:</strong> <span id="enemiesLeft">0</span></span>
+        <span><strong>Challengers Health:</strong> <span id="damageLeft">0</span></span>
+      </div>
+      
+    </div>
+
+    <div id="sidePanel">
+      <h3>Investments</h3>
+      <div id="towersContainer"></div>
+      <div class="help">
+        <p>Tips:</p>
+        <ul>
+          <li>Singer Songwriter: Balanced tone and vocal range</li>
+          <li>Platinum Record Cannon: Big hits with high impact and a small splash</li>
+          <li>Hot Chicken Launcher: Fast service, well seasoned with a kick</li>
+          <li>Local Goods Slinger: Long range, slow service and over priced impact</li>
+          <li>Tourism Tax Trebuchet: City wide range, 10.2% tax on all good and services sure to discourage visitors</li>
+          <li>Left Click - Rotate Vertical</li>
+          <li>Right Click - Rotate Horizontal</li>
+          <li>Scroll - Zoom In/Out</li>
+          <li>Esc - Move and place items</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="overlay" class="hidden">
+      <div class="modal">
+        <h2 id="overlayTitle">Game Over</h2>
+        <p id="overlayText"></p>
+        <button id="restartBtn">Restart</button>
+      </div>
+    </div>
+
+    <canvas id="game"></canvas>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+  </html>
+

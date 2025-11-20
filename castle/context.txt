@@ -1,0 +1,6 @@
+can you create me a 3d castle type web app that runs in a browser. 
+- This is a defense type game with 10 waves, which incrementaly get more difficult
+- I should start with arrow men but should be able to upgrade to cannons, fire, and better weapons
+- each enemy I kill gives me points which can be used to purchase upgrades to my castles
+- each enemy can deal my castle damage by attacking it if it gets close enough to my castle
+- the enemies need to walk down a path to approach the castle 
